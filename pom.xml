@@ -2,16 +2,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
+    <groupId>fat-test</groupId>
     <artifactId>fat-test</artifactId>
     <packaging>jar</packaging>
 
-    <parent>
-        <groupId>com.yuanbao.cloud</groupId>
-        <artifactId>parent</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-        <!-- lookup parent from repository -->
-    </parent>
 
     <dependencies>
 
@@ -24,8 +18,8 @@
         <!-- spring-boot測試依賴 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-crawler.test</artifactId>
-            <scope>crawler.test</scope>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
 
         <!-- springBoot自動部署（開發） -->
