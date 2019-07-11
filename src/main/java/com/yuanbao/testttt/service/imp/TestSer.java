@@ -30,8 +30,6 @@ public class TestSer implements ITestService {
     private MemberMapper memberMapper;
 
     public String test() {
-
-
         return memberMapper.getMemberInfo("888xx").get("name").toString();
     }
 
