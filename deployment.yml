@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fat-test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fat-test
+  template:
+    metadata:
+      labels:
+        app: fat-test
+    spec:
+      containers:
+      - name: fat-test-webapp
+        image: 548316749193.dkr.ecr.ap-northeast-2.amazonaws.com/fat-test:0
+        ports:
+        - name: prot
+          containerPort: 3007
+
